@@ -1,0 +1,37 @@
+# Dependency directories
+node_modules/
+.yarn/cache
+.pnp.*
+
+# Production build directory
+dist/
+
+# Output files
+out.txt
+
+# Yarn Zero-Installs directory
+# Uncomment if not using Zero-Installs
+# .yarn/*
+
+# Uncomment if using Zero-Installs
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Environment variables and files with sensitive info
+.env
+
+# Editor directories and files
+.vscode/
+*.code-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

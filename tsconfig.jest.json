@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "noImplicitAny": false
+    },
+    "rules": {
+      "@typescript-eslint/no-explicit-any": "off"
+    }
+  }
+  

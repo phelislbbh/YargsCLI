@@ -1,0 +1,57 @@
+{
+  "name": "senior-take-home-test",
+  "packageManager": "yarn@3.6.1",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "@types/chai": "^4.3.11",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^29.5.10",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.10.0",
+    "@types/supertest": "^2.0.16",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "babel-jest": "^29.7.0",
+    "chai": "^4.3.10",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.7.0",
+    "mocha": "^10.2.0",
+    "nock": "^13.4.0",
+    "prettier": "^2.8.4",
+    "regenerator-runtime": "^0.13.11",
+    "rimraf": "^5.0.5",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "api": "node dist/src/interfaces/api/index.js",
+    "cli": "node dist/src/interfaces/cli/index.js",
+    "build": "rimraf dist && tsc",
+    "dev": "yarn build && yarn api",
+    "test": "jest",
+    "test:api": "jest test/integration/api",
+    "test:cli": "jest test/integration/cli",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "express": "^4.18.2",
+    "jsonpath": "^1.1.1",
+    "yargs": "^17.7.2"
+  },
+  "description": "API and CLI tool for our customer success team.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "Phelis Nakato",
+  "license": "ISC"
+}

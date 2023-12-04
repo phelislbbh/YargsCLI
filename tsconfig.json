@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5", 
+    "lib": ["es2015", "dom"],
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "types": ["jest", "node"],
+    "baseUrl": "./src", // Set the base URL to your source directory
+    "paths": {
+      "shared/*": ["shared/*"] // Define paths for your shared modules
+    }
+  },
+  "references": []
+}
+

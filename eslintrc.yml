@@ -1,0 +1,10 @@
+env:
+  jest: true
+  node: true
+parser: "@typescript-eslint/parser"
+extends:
+  - eslint:recommended
+  - plugin:prettier/recommended
+  - plugin:@typescript-eslint/recommended
+plugins:
+  - "@typescript-eslint"
